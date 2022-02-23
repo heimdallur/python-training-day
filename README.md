@@ -21,3 +21,9 @@ Module 4:<br>
 Section 1: Declaring classes<br>
 Section 2: Class functions<br>
 Section 2: ClassMethods, StaticMethods, Properties<br>
+
+## Before the session
+1. Download python (recommend 3.9.10 https://www.python.org/ftp/python/3.9.10/python-3.9.10-amd64.exe)
+2. Make sure python is in your path (instructions https://datatofish.com/add-python-to-windows-path/)
+3. Install git on your machine (https://git-scm.com/downloads)
+4. Ensure you have an IDE (example Spyder, VSCode, Atom...etc)

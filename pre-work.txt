@@ -1,0 +1,4 @@
+1. Download python (recommend 3.9.10 https://www.python.org/ftp/python/3.9.10/python-3.9.10-amd64.exe)
+2. Make sure python is in your path (instructions https://datatofish.com/add-python-to-windows-path/)
+3. Install git on your machine (https://git-scm.com/downloads)
+4. Ensure you have an IDE (example Spyder, VSCode, Atom...etc)
