@@ -1,2 +1,5 @@
 *__pycache__
 *api_key.txt
+
+# Anything with the my prefix
+my_*

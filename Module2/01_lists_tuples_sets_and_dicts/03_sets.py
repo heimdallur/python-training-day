@@ -5,20 +5,19 @@
 ##############
 # Sets are a colleciton of items made using {}
 # items are separated by ,
-a = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
-print(a)
+# INPUT - Write a set with 10 unique items in it
+
 # Sets will only keep unique values
-b = {1, 1, 1, 2, 2, 2, 3, 3, 3}
-print(b)
+# INPUT - Write a list with 10 items in it, make sure there are duplicates
 
 # Sets are unordered and so indexes cannot be used
-a[0] # this will throw an error
+# INPUT - Select the first item (this will throw an error)
 
 # Sets are "immutable" (this means that items in them CANNOT be modified)
-a[2] = "foo"  # this will throw an error
+# INPUT - Change the 3rd item to foo (this will error)
 
 # You can convert sets to lists though
-a = list(a)  # once you've changed it you can modify it
+# INPUT - Convert a set to a list and modify it
 
 # You can get the length of a set with len
-len(b)
+# INPUT - Get the length of a set

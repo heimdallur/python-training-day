@@ -20,13 +20,12 @@ and - logic operator to combine 2 or more checks. Only True if
 # Basic use
 a = 1
 # Start a while loop
-while a < 10:
-    print(f"a is {a}")
-    a += 1
+# INPUT - Create a while loop until a is 10
 
-# WATCHOUTS
-# Infinate loops are killers
-a = 1
-while a < 10:
-    print(f"a is {a}")
-    a += -1
+# You can leave a loop early with break
+a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# INPUT - Create a loop which breaks early
+
+# You can skip to the next iteration in a loop with continue
+a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# INPUT - Create a loop which uses continue

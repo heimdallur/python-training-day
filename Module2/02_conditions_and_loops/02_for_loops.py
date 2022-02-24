@@ -18,71 +18,47 @@ and - logic operator to combine 2 or more checks. Only True if
 # For loops will "loop" through each item in an object
 # Basic use with lists
 a = [1, 2, 3]
-b = []
-# For each item in a run the following code
-for item in a:
-    # Run this code
-    b.append(item)
-print(b)
+# INPUT - Create a for loop over a list printing each item in turn
 
 # Basic use with dicts - keys only
-a = {"foo": 1, "bar": 2, "baz": 3}
-b = []
 # Running a for loop on a dict will loop through it's keys
-for key in a:
-    # Run this code
-    b.append(key)
-print(b)
+a = {"foo": 1, "bar": 2, "baz": 3}
+# INPUT - Create a for loop over a dictionary printing each key in turn
 
 # Basic use with dicts - keys and values
 a = {"foo": 1, "bar": 2, "baz": 3}
-b = {}
 # To get keys and values invoke the items method
-for key, value in a.items():
-    # Run this code
-    b[key] = value
-print(b)
+# INPUT - Create a for loop over a dictionary printing each key and 
+#   value in turn
 
 # Using with if criteria
 a = [1, 2, 3]
-b = []
 # For each item in a run the following code
-for item in a:
-    # Run this code
-    if item < 3:
-        b.append(item)
-    else:
-        b.append("Computer says no")
-print(b)
+# INPUT - Create a for loop using an if statement inside
 
 # Zipping
 a = ["foo", "bar", "baz"]
 b = [1, 2, 3]
 # Zipping creates a pair of values for the 1st, 2nd...nth values
-for item1, item2 in zip(a, b):
-    print(a, b)
+# INPUT - Zip two lists together and loop over them
 
 # Nesting loops
 a = [[1, 2], [3, 4], [5, 6]]
 # Lists can have lists inside them (nesting). Each loop will use
 # the whole list for its value
-for item in a:
-    print(item)
+# INPUT - Create a single level for loop
 # To access the items in the list inside the main list you need another loop
-for item in a:
-    for value in item:
-        print(f"{value} is part of {item}")
-
+# INPUT - Create a nested for loop
 
 # Using with enumerate
 a = ["foo", "bar", "baz"]
-b = {}
 # Running a for loop on a dict will loop through it's keys
-for index, item in enumerate(a):
-    # Run this code
-    b[item] = index
-print(b)
+# INPUT - Create a enumerated for loop
 
-# WATCHOUTS
-# Not always the fastest way to do things (especially nested lists)
-# Data types don't have to be consistent but it helps
+# You can leave a loop early with break
+a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# INPUT - Create a loop which breaks early
+
+# You can skip to the next iteration in a loop with continue
+a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# INPUT - Create a loop with a continue statement
