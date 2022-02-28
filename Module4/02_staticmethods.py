@@ -4,34 +4,13 @@
 #   functions
 
 # This is a basic class holding a list of lists
-import math
-
-
-class MyLists:
-    def __init__(self,
-                *args
-                 ):
-        self.lists = list(args)
-# Create it like this
-MyLists([1,2,3], [4,5,6]).lists
+# INPUT - Create a basic class for lists
 
 # Now we can add a statcmethod to combine 2 lists together
-class MyLists:
-    def __init__(self,
-                *args
-                 ):
-        self.lists = list(args)
-
-    @staticmethod
-    def combine_lists(*args):
-        out = []
-        for l in args:
-            out += l
-        return out
+# INPUT - Add a static method for combining lists
 
 # Use it like this
-MyLists.combine_lists([1,2,3], [4,5,6])
+# INPUT - Use the static method
 
 # This is actually similar to how the math class works
-math.ceil(1.1111)
-math.dist([1,2,3], [4,5,6])
+# INPUT - Show examples using math ceil dist
