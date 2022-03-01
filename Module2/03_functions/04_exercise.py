@@ -41,3 +41,18 @@ one thing" principal.
 if he wants to make a 45% margin (note margin not mark up). Add this as an extra
 field called "rrp" to each cake.
 """
+
+def calc_profit(cakes: dict, hr_rate, margin=False):
+    for cake in cakes:
+        time_cost = cake['people_required'] * ((hr_rate / 60) * cake['labour_time'])
+        ingredients_cost = cake['ingredients_cost']
+        sell_price = cake['sell_price']
+        net = ingredients_cost + time_cost
+        print(f'Profit: {round(sell_price - net, 2)}')
+        if margin:
+            print(f'New Price: {add_margin(net, margin)}')
+
+def add_margin(net, margin):
+    print(f'New Price: {(net/margin)*100}')
+
+calc_profit(cakes, 9.15, 0.45)
